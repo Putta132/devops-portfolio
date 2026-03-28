@@ -1465,3 +1465,10 @@ ul {
   color: var(--accent-primary);
 }
 
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+

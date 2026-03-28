@@ -142,13 +142,26 @@
             </div>
             <div class="about-detail-item">
               <i class="fas fa-briefcase"></i>
-              <span>DevOps Engineer at Placid Technologies</span>
+              <span>Cloud Support Engineer at Placid Technologies</span>
+            </div>
+            <div class="about-detail-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Technical Support Engineer at Boston IT Solutions</span>
             </div>
             <div class="about-detail-item">
               <i class="fas fa-graduation-cap"></i>
               <span>FortuneCloud — Cloud &amp; DevOps Training</span>
             </div>
           </div>
+
+          <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-light); font-size: 1.1rem; font-weight: 600;">Key Achievements</h4>
+          <ul style="list-style-type: none; padding-left: 0; margin-bottom: 2rem;">
+            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Reduced deployment time from 3 hours to under 8 minutes</strong> by architecting a GitOps-driven CI/CD pipeline (GitHub Actions + ArgoCD) for 6 microservices — change failure rate dropped from 40% to under 5%.</li>
+            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Achieved 100% reproducible infrastructure</strong> by codifying 3-environment AWS platform (dev/staging/prod) with Terraform — eliminating all manual ClickOps drift incidents.</li>
+            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Delivered zero HIGH-severity Checkov findings</strong> across entire Terraform codebase; full VPC + EKS + RDS Aurora provisioning completed in under 15 minutes from scratch.</li>
+            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Reduced credential attack surface to zero</strong> by implementing HashiCorp Vault dynamic secrets and AWS Secrets Manager (OIDC) — no plaintext secrets across both platforms.</li>
+            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Identified and remediated 3 critical CVEs and 14 hardcoded credentials</strong> through automated SAST (Semgrep), Snyk dependency scanning, and Trivy container scanning integrated into CI/CD.</li>
+          </ul>
           <a href="#contact" class="btn btn-primary">
             <i class="fas fa-handshake"></i> Let's Connect
           </a>
@@ -169,79 +182,75 @@
       <div class="projects-grid" data-animate>
 
         <!-- Project Card 1 -->
-        <article class="project-card" id="project-vpc">
+        <article class="project-card" id="project-cicd">
           <div class="project-image-wrapper">
-            <img src="images/project-vpc.png" alt="Scalable Web Infrastructure Architecture" class="project-image" loading="lazy" />
+            <img src="images/arch-cicd.png" alt="CI/CD Pipeline Architecture" class="project-image" loading="lazy" />
             <div class="project-image-overlay">
-              <span class="project-category">AWS Infrastructure</span>
+              <span class="project-category">CI/CD &amp; GitOps</span>
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">Scalable Web Infrastructure</h3>
+            <h3 class="project-title">Production CI/CD Pipeline</h3>
             <p class="project-desc">
-              Designed a highly available web infrastructure using AWS VPC with public/private subnets,
-              Auto Scaling Groups, and Application Load Balancer for zero-downtime deployments.
+              Architected a GitOps-driven pipeline (GitHub Actions + ArgoCD) for 6 containerized microservices. Implemented Blue/Green zero-downtime releases, dropping deployment times from 3 hours to under 8 minutes.
             </p>
             <div class="project-tags">
-              <span class="tag">VPC</span>
-              <span class="tag">Auto Scaling</span>
-              <span class="tag">ALB</span>
-              <span class="tag">EC2</span>
-              <span class="tag">RDS</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">ArgoCD</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Helm</span>
             </div>
-            <a href="#" class="btn btn-sm btn-outline" id="btn-project-vpc">
+            <a href="#" class="btn btn-sm btn-outline" id="btn-project-cicd">
               <i class="fas fa-external-link-alt"></i> View Details
             </a>
           </div>
         </article>
 
         <!-- Project Card 2 -->
-        <article class="project-card" id="project-nginx">
+        <article class="project-card" id="project-aws">
           <div class="project-image-wrapper">
-            <img src="images/project-nginx.png" alt="EC2 Nginx Website Hosting Architecture" class="project-image" loading="lazy" />
+            <img src="images/project-vpc.png" alt="AWS Infrastructure Architecture" class="project-image" loading="lazy" />
             <div class="project-image-overlay">
-              <span class="project-category">Web Hosting</span>
+              <span class="project-category">Infrastructure as Code</span>
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">EC2 Nginx Website Hosting</h3>
+            <h3 class="project-title">Multi-Environment AWS Platform</h3>
             <p class="project-desc">
-              Deployed a production-grade Nginx web server on AWS EC2 with SSL/TLS termination,
-              Route 53 DNS, automated backups, and comprehensive security hardening.
+              Eliminated ClickOps drift by codifying 3 environments (dev/staging/prod) with Terraform. Provisioned VPC, EKS, and RDS Aurora in under 15 minutes with 100% reproducible and isolated remote state.
             </p>
             <div class="project-tags">
-              <span class="tag">EC2</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">Route 53</span>
-              <span class="tag">SSL</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">AWS EKS</span>
+              <span class="tag">AWS RDS</span>
+              <span class="tag">S3/DynamoDB</span>
             </div>
-            <a href="#" class="btn btn-sm btn-outline" id="btn-project-nginx">
+            <a href="#" class="btn btn-sm btn-outline" id="btn-project-aws">
               <i class="fas fa-external-link-alt"></i> View Details
             </a>
           </div>
         </article>
 
         <!-- Project Card 3 -->
-        <article class="project-card" id="project-lb">
+        <article class="project-card" id="project-sec">
           <div class="project-image-wrapper">
-            <img src="images/project-lb.png" alt="Load Balancer Troubleshooting Architecture" class="project-image" loading="lazy" />
+            <img src="images/project-lb.png" alt="Security & Monitoring Dashboard" class="project-image" loading="lazy" />
             <div class="project-image-overlay">
-              <span class="project-category">Troubleshooting</span>
+              <span class="project-category">DevSecOps &amp; Observability</span>
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">Load Balancer Troubleshooting</h3>
+            <h3 class="project-title">Zero-Trust &amp; DORA Metrics</h3>
             <p class="project-desc">
-              Diagnosed and resolved complex ALB routing issues across multi-AZ deployments.
-              Implemented health checks, CloudWatch alarms, and automated failover strategies.
+              Integrated automated SAST/Trivy scanning, preventing 3 critical CVEs. Secured secrets via HashiCorp Vault &amp; AWS Secrets Manager. Built Prometheus + Grafana dashboards to track four key DORA metrics.
             </p>
             <div class="project-tags">
-              <span class="tag">ALB</span>
-              <span class="tag">CloudWatch</span>
-              <span class="tag">Health Checks</span>
-              <span class="tag">Multi-AZ</span>
+              <span class="tag">Vault</span>
+              <span class="tag">Prometheus</span>
+              <span class="tag">Grafana</span>
+              <span class="tag">Trivy &amp; Semgrep</span>
             </div>
-            <a href="#" class="btn btn-sm btn-outline" id="btn-project-lb">
+            <a href="#" class="btn btn-sm btn-outline" id="btn-project-sec">
               <i class="fas fa-external-link-alt"></i> View Details
             </a>
           </div>

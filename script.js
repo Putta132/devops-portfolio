@@ -263,4 +263,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Project Modals ─────────────────────────
+  const btnCicd = document.getElementById('btn-project-cicd');
+  const btnAws = document.getElementById('btn-project-aws');
+  const modalCicd = document.getElementById('modal-cicd');
+  const modalAws = document.getElementById('modal-aws');
+
+  const openProjectModal = (modal) => {
+    if(!modal) return;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeProjectModal = (modal) => {
+    if(!modal) return;
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  if (btnCicd) {
+    btnCicd.addEventListener('click', (e) => {
+      e.preventDefault();
+      openProjectModal(modalCicd);
+    });
+  }
+
+  if (btnAws) {
+    btnAws.addEventListener('click', (e) => {
+      e.preventDefault();
+      openProjectModal(modalAws);
+    });
+  }
+
+  document.querySelectorAll('.project-modal').forEach(modal => {
+    const closeBtn = modal.querySelector('.modal-close-btn');
+    if (closeBtn) closeBtn.addEventListener('click', () => closeProjectModal(modal));
+    
+    // Close on background click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeProjectModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.project-modal.active').forEach(closeProjectModal);
+    }
+  });
+
 });

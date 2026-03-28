@@ -461,6 +461,39 @@
     </div>
   </footer>
 
+  <!-- ========== PROJECT MODALS ========== -->
+  <!-- Modal 1 -->
+  <div class="project-modal" id="modal-cicd">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <h3 class="modal-title">Production CI/CD Pipeline</h3>
+      <ul class="modal-list">
+        <li><i class="fas fa-check-circle"></i> Architected a multi-stage GitHub Actions CI/CD pipeline for 6 containerized microservices (NovaPay fintech platform) — replacing manual SSH deployments and reducing deployment time from 3 hours to under 8 minutes.</li>
+        <li><i class="fas fa-check-circle"></i> Implemented GitOps delivery with ArgoCD watching a dedicated gitops-configs repo; ArgoCD auto-deploys Helm chart changes to AWS EKS within 2 minutes of a merge to main — zero manual kubectl commands required.</li>
+        <li><i class="fas fa-check-circle"></i> Integrated Trivy container scanning and SonarQube quality gates into the pipeline — blocking merges on CRITICAL CVEs and enforcing ≥70% code coverage; reduced change failure rate from 40% to under 5%.</li>
+        <li><i class="fas fa-check-circle"></i> Implemented Blue/Green deployments using Kubernetes service selectors with k6 smoke tests during traffic switch — achieving zero-downtime releases; rollback executed via a single git revert + push.</li>
+        <li><i class="fas fa-check-circle"></i> Configured AWS Secrets Manager with OIDC-based GitHub Actions authentication and External Secrets Operator on Kubernetes — zero hardcoded credentials across entire codebase, verified via git grep.</li>
+        <li><i class="fas fa-check-circle"></i> Built Prometheus + Grafana dashboards tracking all four DORA metrics (Deployment Frequency, Lead Time, Change Failure Rate, MTTR) sourced from GitHub Events API and PagerDuty.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="project-modal" id="modal-aws">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <h3 class="modal-title">Multi-Environment AWS Platform</h3>
+      <ul class="modal-list">
+        <li><i class="fas fa-check-circle"></i> Eliminated ClickOps-related drift incidents by migrating 3 environments (dev/staging/prod) to Terraform IaC, resulting in 100% reproducible infrastructure from a single codebase with zero hardcoded values.</li>
+        <li><i class="fas fa-check-circle"></i> Built reusable Terraform modules for VPC (multi-AZ, public/private/database subnets), EKS (managed node groups, OIDC, cluster add-ons), RDS Aurora (multi-AZ, KMS encryption), IAM (least-privilege, no wildcard permissions), and ALB/Route53.</li>
+        <li><i class="fas fa-check-circle"></i> Configured S3 + DynamoDB remote state with separate state keys per environment (blast-radius isolation); demonstrated DynamoDB state lock preventing concurrent applies — concurrent runs blocked with lock error showing holder ID.</li>
+        <li><i class="fas fa-check-circle"></i> Integrated tfsec and Checkov policy-as-code scanning into GitHub Actions CI on every PR; achieved zero HIGH-severity findings with complete VPC + EKS + RDS Aurora provisioning in under 15 minutes from scratch.</li>
+        <li><i class="fas fa-check-circle"></i> Added scheduled terraform plan (every 6 hrs) for automated drift detection with Slack alerts on non-zero exit codes; secrets accessed via AWS Secrets Manager data blocks — never in .tfvars or state in plaintext.</li>
+        <li><i class="fas fa-check-circle"></i> Infrastructure outputs (EKS Cluster ARN, ECR Repository URL, RDS Endpoint, VPC Subnet IDs) consumed directly by Project 01’s CI/CD pipeline — full dev/staging/prod environment created with one command: ./scripts/deploy.sh dev.</li>
+      </ul>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

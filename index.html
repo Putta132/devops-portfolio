@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prateek Kulkarni — DevOps Engineer specializing in cloud infrastructure automation, CI/CD pipelines, Docker, Kubernetes, and Terraform. Based in Bengaluru, India." />
-  <meta name="keywords" content="Prateek Kulkarni, DevOps Engineer, Cloud Engineer, AWS, Docker, Kubernetes, Terraform, CI/CD, Jenkins, Portfolio, Bengaluru" />
+  <meta name="description" content="Prateek Kulkarni — DevOps & Cloud Engineer. Specializing in AWS, Terraform, Kubernetes, and full-stack observability." />
+  <meta name="keywords" content="DevOps, Cloud Engineer, AWS, Terraform, Kubernetes, CI/CD, Jenkins, Docker, Portfolio" />
   <meta name="author" content="Prateek Kulkarni" />
-  <title>Prateek Kulkarni | DevOps Engineer &amp; Cloud Infrastructure</title>
+  <title>Prateek Kulkarni | DevOps & Cloud Engineer</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -23,479 +23,318 @@
   <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo" id="nav-logo" style="font-family: var(--font-mono); color: var(--accent-primary); letter-spacing: 1px;">
-        <span class="logo-bracket">&lt;</span>PRATEEK <span class="logo-slash">/&gt;</span>
+      <a href="#home" class="nav-logo text-cyan">
+        <span class="mono-text" style="color:var(--text-secondary);">&lt;</span>PRATEEK <span class="mono-text" style="color:var(--text-secondary);">/&gt;</span>
       </a>
+      
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
-        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
-        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
-        <li><a href="#contact" class="nav-link btn btn-sm btn-outline" style="border-radius: 6px; padding: 6px 16px; margin-left: 8px;" data-section="contact">Hire Me</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="#" class="btn-resume">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
       </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
       </button>
     </div>
   </nav>
 
   <!-- ========== HERO SECTION ========== -->
   <section class="hero" id="home">
-    <div class="hero-particles" id="hero-particles"></div>
-    <div class="hero-content">
-      <p class="hero-greeting">
-        <span class="terminal-cursor">▋</span> Hello World
-      </p>
-      <h1 class="hero-title">
-        Hi, I'm <span class="gradient-text">Prateek Kulkarni</span>
-      </h1>
-      <p class="hero-subtitle">
-        Turning Manual Infrastructure into Automated, Scalable Systems.<br/>
-        <span style="font-size: 0.9em; opacity: 0.9; margin-top: 8px; display: inline-block;">Aspiring DevOps Engineer | AWS | Docker | Kubernetes | CI/CD | Linux</span>
-      </p>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Projects</span>
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content reveal">
+        <div class="hero-availability">
+          <div class="ping"></div>
+          Available for opportunities
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Cloud Certs</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
-          <span class="stat-label">Uptime Goal</span>
+        <h1 class="hero-title">
+          Hi, I'm <br/><span class="gradient-text">Prateek Kulkarni</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          DevOps Engineer / DevOps Aspirant
+        </h2>
+        <p class="hero-desc">
+          I turn complex infrastructure challenges into elegant, automated solutions. Results-driven engineer specializing in AWS, Terraform, Kubernetes, and full-stack observability. Building platforms that scale.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
       </div>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary" id="cta-projects">
-          <i class="fas fa-rocket"></i> View Projects
-        </a>
-        <a href="#contact" class="btn btn-outline" id="cta-contact">
-          <i class="fas fa-envelope"></i> Contact Me
-        </a>
-      </div>
-      <div class="hero-terminal">
+
+      <!-- Right Terminal -->
+      <div class="terminal reveal delay-2">
         <div class="terminal-header">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
-          <span class="terminal-title">bash — prateek@cloud:~</span>
+          <div class="terminal-btn tb-r"></div>
+          <div class="terminal-btn tb-y"></div>
+          <div class="terminal-btn tb-g"></div>
+          <span style="color: var(--text-muted); font-size: 0.8rem; margin-left: 8px; font-family: var(--font-mono);">bash - prateek@devops:~</span>
         </div>
-        <div class="terminal-body">
-          <div class="terminal-line">
-            <span class="terminal-prompt">$</span>
-            <span class="terminal-text" id="typed-text"></span>
-            <span class="typing-cursor">|</span>
+        <div class="terminal-body" id="term-body">
+          <div class="term-line">
+            <span class="term-prompt">➜</span>
+            <span class="term-command">whoami</span>
+            <span class="term-output">prateek_kulkarni</span>
+          </div>
+          <div class="term-line">
+            <span class="term-prompt">➜</span>
+            <span class="term-command">cat skills.json</span>
+            <span class="term-output">["AWS", "Kubernetes", "Terraform", "Docker", "CI/CD"]</span>
+          </div>
+          <div class="term-line">
+            <span class="term-prompt">➜</span>
+            <span class="term-command" id="typewriter"></span><span class="cursor-blink"></span>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <span>Scroll Down</span>
-      <div class="scroll-arrow">
-        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
   </section>
 
-  <!-- ========== ABOUT SECTION ========== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">&lt;about /&gt;</span>
-        <h2 class="section-title">The Engineer Behind <br/><span class="gradient-text">the Infrastructure</span></h2>
-        <div class="section-line"></div>
-        <p class="section-desc">I turn complex infrastructure challenges into elegant, automated solutions.</p>
-      </div>
-      <div class="about-bento-grid" data-animate>
-        
-        <!-- Main Text Card -->
-        <div class="bento-card bento-main">
-          <div class="terminal-header" style="background: transparent; padding: 0; border: none; margin-bottom: 24px;">
-            <span class="terminal-dot red" style="width:10px;height:10px;"></span>
-            <span class="terminal-dot yellow" style="width:10px;height:10px;"></span>
-            <span class="terminal-dot green" style="width:10px;height:10px;"></span>
-            <span class="terminal-title" style="margin-left: 12px;">~/about/prateek.md</span>
-          </div>
-          <p class="about-text">
-            Results-driven <span class="highlight-cyan">DevOps & Cloud Engineer</span> with <span class="highlight-cyan">2+ years</span> of hands-on experience designing and operating cloud-native infrastructure on AWS — from IaC provisioning to Kubernetes orchestration and full-stack observability.
-          </p>
-          <p class="about-text">
-            Proven ability to architect production-grade <span class="highlight-purple">CI/CD pipelines</span> using GitHub Actions, ArgoCD, and GitOps principles — delivering <span class="highlight-purple">zero-downtime Blue/Green deployments</span> to AWS EKS. Skilled in provisioning multi-environment platforms via Terraform.
-          </p>
-          <div class="about-details" style="margin-top: 32px; display: flex; gap: 20px; flex-wrap: wrap;">
-            <div class="about-detail-item" style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-muted);"><i class="fas fa-map-marker-alt" style="color: var(--accent-primary);"></i> Bengaluru, India</div>
-            <div class="about-detail-item" style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-muted);"><i class="fab fa-aws" style="color: var(--accent-primary);"></i> AWS Certified</div>
-          </div>
-        </div>
-
-        <!-- Stat Cards -->
-        <div class="bento-card bento-stat">
-          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">👨‍💻</div>
-          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">2+</h3>
-          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">YEARS EXPERIENCE</p>
-        </div>
-
-        <div class="bento-card bento-stat">
-          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">⚡</div>
-          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">18x</h3>
-          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">FASTER DEPLOYMENTS</p>
-        </div>
-
-        <div class="bento-card bento-stat">
-          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">🚀</div>
-          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">&lt;5%</h3>
-          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">CHANGE FAILURE RATE</p>
-        </div>
-
-        <div class="bento-card bento-stat">
-          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">🛡️</div>
-          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">0</h3>
-          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">HIGH SECURITY FINDINGS</p>
-        </div>
-
-      </div>
+  <!-- ========== ABOUT (BENTO GRID) ========== -->
+  <section id="about" class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">01. ABOUT</span>
+      <h2 class="section-title">Data-Driven <span class="gradient-text">Engineering</span></h2>
+      <p class="section-desc">Delivering measurable improvements through GitOps, infrastructure as code, and cloud-native architectures.</p>
     </div>
-  </section>
 
-  <!-- ========== PROJECTS SECTION ========== -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">&lt;projects /&gt;</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <div class="section-line"></div>
-        <p class="section-desc">Real-world cloud infrastructure projects demonstrating scalable, production-grade solutions.</p>
+    <div class="bento-grid reveal delay-1">
+      <div class="bento-card bento-main">
+        <h3 style="font-size: 1.5rem; margin-bottom: 16px;">System Architect & Automator</h3>
+        <p class="bento-about-text">
+          I am a passionate DevOps Engineer focused on bridging the gap between development and operations. With a strong foundation in AWS and Linux administration, I specialize in containerizing legacy applications, deploying robust Kubernetes clusters, and writing DRY Terraform modules. 
+        </p>
+        <p class="bento-about-text" style="color: var(--text-primary);">
+          <strong>My philosophy:</strong> If you have to do it twice, automate it. If it fails, make it visible.
+        </p>
       </div>
-      <div class="projects-grid" data-animate>
 
-        <!-- Project Card 1 -->
-        <article class="project-card" id="project-cicd">
-          <div class="project-image-wrapper">
-            <img src="images/arch-cicd.png" alt="CI/CD Pipeline Architecture" class="project-image" loading="lazy" />
-            <div class="project-image-overlay">
-              <span class="project-category">CI/CD &amp; GitOps</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Production CI/CD Pipeline</h3>
-            <p class="project-desc">
-              Architected a GitOps-driven pipeline (GitHub Actions + ArgoCD) for 6 containerized microservices. Implemented Blue/Green zero-downtime releases, dropping deployment times from 3 hours to under 8 minutes.
-            </p>
-            <div class="project-tags">
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">ArgoCD</span>
-              <span class="tag">Kubernetes</span>
-              <span class="tag">Helm</span>
-            </div>
-            <a href="#" class="btn btn-sm btn-outline" id="btn-project-cicd">
-              <i class="fas fa-external-link-alt"></i> View Details
-            </a>
-          </div>
-        </article>
+      <div class="bento-card bento-stat">
+        <div class="bento-val text-cyan">2+</div>
+        <div class="bento-label">Years Experience</div>
+      </div>
 
-        <!-- Project Card 2 -->
-        <article class="project-card" id="project-aws">
-          <div class="project-image-wrapper">
-            <img src="images/project-vpc.png" alt="AWS Infrastructure Architecture" class="project-image" loading="lazy" />
-            <div class="project-image-overlay">
-              <span class="project-category">Infrastructure as Code</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Multi-Environment AWS Platform</h3>
-            <p class="project-desc">
-              Eliminated ClickOps drift by codifying 3 environments (dev/staging/prod) with Terraform. Provisioned VPC, EKS, and RDS Aurora in under 15 minutes with 100% reproducible and isolated remote state.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Terraform</span>
-              <span class="tag">AWS EKS</span>
-              <span class="tag">AWS RDS</span>
-              <span class="tag">S3/DynamoDB</span>
-            </div>
-            <a href="#" class="btn btn-sm btn-outline" id="btn-project-aws">
-              <i class="fas fa-external-link-alt"></i> View Details
-            </a>
-          </div>
-        </article>
+      <div class="bento-card bento-stat">
+        <div class="bento-val text-purple">18<span style="font-size: 1.5rem;">x</span></div>
+        <div class="bento-label">Faster Deployments</div>
+      </div>
 
+      <div class="bento-card bento-stat">
+        <div class="bento-val text-green">&lt;5%</div>
+        <div class="bento-label">Change Failure Rate</div>
+      </div>
 
-
+      <div class="bento-card bento-stat">
+        <div class="bento-val text-cyan">0</div>
+        <div class="bento-label">High Severity CVEs</div>
       </div>
     </div>
   </section>
 
   <!-- ========== SKILLS SECTION ========== -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">&lt;skills /&gt;</span>
-        <h2 class="section-title">Tools &amp; <span class="gradient-text">Technologies</span></h2>
-        <div class="section-line"></div>
-        <p class="section-desc">A deep, battle-tested toolkit spanning cloud, containers, observability, and security.</p>
-      </div>
-      <div class="skills-category-grid" data-animate>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-cloud"></i> Cloud Platform</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><i class="fab fa-aws"></i> AWS</div>
-            <div class="skill-badge"><i class="fab fa-linux"></i> Linux</div>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-box"></i> Containerisation</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><i class="fab fa-docker"></i> Docker</div>
-            <div class="skill-badge"><svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor" style="width:14px;height:14px;"><path d="M15.9.476a2.14 2.14 0 0 0-.823.218L3.932 6.01a2.133 2.133 0 0 0-1.1 1.39l-2.78 12.55a2.133 2.133 0 0 0 .272 1.674l7.63 10.283A2.133 2.133 0 0 0 9.6 32.9h14.8a2.133 2.133 0 0 0 1.646-.993l7.63-10.283a2.133 2.133 0 0 0 .272-1.674L31.17 7.4a2.133 2.133 0 0 0-1.1-1.39L18.923.694A2.133 2.133 0 0 0 15.9.476zm.1 3.474a.423.423 0 0 1 .184.042l.54.241a.423.423 0 0 1 .237.335l.073.59a7.573 7.573 0 0 1 2.7 1.1l.478-.34a.423.423 0 0 1 .4-.04l.51.273a.423.423 0 0 1 .2.355l-.023.59a7.573 7.573 0 0 1 1.97 2.15l.55-.15a.423.423 0 0 1 .39.118l.39.41a.423.423 0 0 1 .073.402l-.214.553a7.573 7.573 0 0 1 .927 2.8l.588.103a.423.423 0 0 1 .316.26l.18.558a.423.423 0 0 1-.107.41l-.43.403a7.573 7.573 0 0 1-.37 2.96l.431.389a.423.423 0 0 1 .107.41l-.178.558a.423.423 0 0 1-.316.26l-.583.1a7.573 7.573 0 0 1-1.35 2.583l.273.503a.423.423 0 0 1-.029.4l-.35.46a.423.423 0 0 1-.38.162l-.59-.065a7.573 7.573 0 0 1-2.22 1.8l.102.587a.423.423 0 0 1-.155.378l-.49.337a.423.423 0 0 1-.404.033l-.527-.25a7.573 7.573 0 0 1-2.763.717l-.07.59a.423.423 0 0 1-.267.345l-.558.18a.423.423 0 0 1-.404-.108l-.398-.43a7.573 7.573 0 0 1-2.867-.34l-.378.434a.423.423 0 0 1-.397.143l-.57-.11a.423.423 0 0 1-.3-.283l-.165-.565a7.573 7.573 0 0 1-2.507-1.45l-.494.283a.423.423 0 0 1-.402-.017l-.47-.34a.423.423 0 0 1-.17-.373l.058-.59a7.573 7.573 0 0 1-1.757-2.3l-.568.157a.423.423 0 0 1-.393-.112l-.32-.463a.423.423 0 0 1-.022-.41l.262-.527a7.573 7.573 0 0 1-.66-2.86l-.59-.075a.423.423 0 0 1-.35-.265l-.12-.574a.423.423 0 0 1 .153-.39l.464-.37a7.573 7.573 0 0 1 .5-2.9l-.418-.415a.423.423 0 0 1-.087-.407l.192-.55a.423.423 0 0 1 .327-.27l.587-.087a7.573 7.573 0 0 1 1.38-2.56l-.264-.51a.423.423 0 0 1 .043-.404l.362-.45a.423.423 0 0 1 .383-.153l.585.076a7.573 7.573 0 0 1 2.17-1.767l-.093-.59a.423.423 0 0 1 .167-.375l.498-.328a.423.423 0 0 1 .404-.022l.52.257a7.573 7.573 0 0 1 2.78-.69l.078-.59a.423.423 0 0 1 .236-.33l.54-.241a.423.423 0 0 1 .184-.042z"/></svg> Kubernetes</div>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-code"></i> Infrastructure as Code</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor" style="width:14px;height:14px;"><path d="M12.042 6.858L20.167 11.573V21.002L12.042 16.287Z"/><path d="M21.167 11.573L29.292 6.858V16.287L21.167 21.002Z"/><path d="M2.917 2.143L11.042 6.858V16.287L2.917 11.573Z"/><path d="M12.042 17.573L20.167 22.288V31.717L12.042 27.002Z"/></svg> Terraform</div>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-infinity"></i> CI/CD &amp; GitOps</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
-            <div class="skill-badge"><i class="fas fa-sync-alt"></i> CI/CD Pipelines</div>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-chart-line"></i> Observability</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><i class="fas fa-fire-alt"></i> Prometheus</div>
-            <div class="skill-badge"><i class="fas fa-chart-pie"></i> Grafana</div>
-          </div>
-        </div>
-
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <h3 class="skill-category-title"><i class="fas fa-terminal"></i> Scripting</h3>
-          </div>
-          <div class="skill-badges">
-            <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
-          </div>
-        </div>
-
-      </div>
+  <section id="skills" class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">02. SKILLS</span>
+      <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+      <p class="section-desc">Tools and technologies I use to build, deploy, and monitor scalable cloud platforms.</p>
     </div>
-  </section>
 
-  <!-- ========== ARCHITECTURE GALLERY ========== -->
-  <section class="section gallery" id="gallery">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">&lt;architecture /&gt;</span>
-        <h2 class="section-title">Architecture <span class="gradient-text">Gallery</span></h2>
-        <div class="section-line"></div>
-        <p class="section-desc">Detailed architecture diagrams showcasing system designs and infrastructure blueprints.</p>
+    <div class="skills-grid reveal delay-1">
+      <!-- Category 1 -->
+      <div class="skill-col">
+        <h3 class="skill-col-title">
+          <i class="fas fa-cloud text-cyan"></i> Cloud & Platform
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fab fa-aws"></i> AWS (EC2, S3, VPC)</span>
+          <span class="skill-tag"><i class="fas fa-server"></i> ALB & Auto Scaling</span>
+          <span class="skill-tag"><i class="fab fa-linux"></i> Linux Administration</span>
+        </div>
       </div>
-      <div class="gallery-grid" data-animate>
-        <div class="gallery-card" id="gallery-cicd">
-          <div class="gallery-image-wrapper">
-            <img src="images/arch-cicd.png" alt="CI/CD Pipeline Architecture" class="gallery-image" loading="lazy" />
-          </div>
-          <div class="gallery-overlay">
-            <h4 class="gallery-title">CI/CD Pipeline Architecture</h4>
-            <p class="gallery-desc">End-to-end continuous delivery pipeline from source to Kubernetes deployment.</p>
-            <button class="btn btn-sm btn-outline gallery-expand" aria-label="Expand CI/CD architecture diagram">
-              <i class="fas fa-expand"></i> Expand
-            </button>
-          </div>
-        </div>
 
-        <div class="gallery-card" id="gallery-k8s">
-          <div class="gallery-image-wrapper">
-            <img src="images/arch-k8s.png" alt="Kubernetes Cluster Architecture" class="gallery-image" loading="lazy" />
-          </div>
-          <div class="gallery-overlay">
-            <h4 class="gallery-title">Kubernetes Cluster Architecture</h4>
-            <p class="gallery-desc">Multi-node Kubernetes cluster with Ingress, services, and monitoring stack.</p>
-            <button class="btn btn-sm btn-outline gallery-expand" aria-label="Expand Kubernetes architecture diagram">
-              <i class="fas fa-expand"></i> Expand
-            </button>
-          </div>
+      <!-- Category 2 -->
+      <div class="skill-col">
+        <h3 class="skill-col-title">
+          <i class="fas fa-box text-purple"></i> Containers & Orchestration
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+          <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+          <span class="skill-tag"><i class="fas fa-ship"></i> Helm</span>
         </div>
+      </div>
 
-        <div class="gallery-card" id="gallery-vpc">
-          <div class="gallery-image-wrapper">
-            <img src="images/project-vpc.png" alt="VPC Network Architecture" class="gallery-image" loading="lazy" />
-          </div>
-          <div class="gallery-overlay">
-            <h4 class="gallery-title">VPC Network Architecture</h4>
-            <p class="gallery-desc">Multi-tier VPC design with NAT gateways, security groups, and private subnets.</p>
-            <button class="btn btn-sm btn-outline gallery-expand" aria-label="Expand VPC architecture diagram">
-              <i class="fas fa-expand"></i> Expand
-            </button>
-          </div>
+      <!-- Category 3 -->
+      <div class="skill-col">
+        <h3 class="skill-col-title">
+          <i class="fas fa-code-branch text-green"></i> Automation & CI/CD
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fas fa-cubes"></i> Terraform</span>
+          <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+          <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins Pipeline</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== LIGHTBOX ========== -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
-    <img src="" alt="Architecture diagram enlarged" class="lightbox-image" id="lightbox-image" />
-  </div>
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">03. PROJECTS</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+      <p class="section-desc">Production-grade infrastructure solutions demonstrating reliability and security.</p>
+    </div>
+
+    <div class="projects-list">
+      
+      <!-- PROJECT 1: NovaPay CI/CD -->
+      <div class="project-row reveal">
+        <div class="proj-head">
+          <div>
+            <h3 class="proj-title">Production-Grade CI/CD Pipeline</h3>
+            <span class="proj-type">NovaPay Platform</span>
+          </div>
+          <div class="proj-status">
+            <div class="ping" style="width: 6px; height: 6px;"></div> Production Ready
+          </div>
+        </div>
+
+        <div class="proj-metrics">
+          <div class="metric-box">
+            <div class="metric-val">40% ➔ 5%</div>
+            <div class="metric-label">Change Failure Rate</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-val">3h ➔ 10m</div>
+            <div class="metric-label">Deployment Time</div>
+          </div>
+        </div>
+
+        <p class="proj-desc">End-to-end production CI/CD pipeline for a 6-service fintech microservices platform (NovaPay) — automating lint → unit test → Trivy scan → SonarQube quality gate → immutable SHA-tagged ECR push in under 10 minutes.</p>
+
+        <ul class="proj-bullets">
+          <li>Containerised all 6 services using optimised multi-stage Dockerfiles (final images under 80MB); Trivy blocks pipeline on any CRITICAL CVE.</li>
+          <li>ArgoCD GitOps: auto-reconciles EKS cluster within 2 minutes of any Helm values change — zero manual kubectl commands.</li>
+          <li>Blue/Green deployment with Kubernetes service selectors; zero-downtime verified by k6 load tests running throughout traffic switch; rollback via single git revert.</li>
+          <li>Zero hardcoded credentials: AWS Secrets Manager + OIDC + External Secrets Operator.</li>
+        </ul>
+
+        <div class="proj-tech">
+          <span class="tech-pill">GitHub Actions</span>
+          <span class="tech-pill">Docker</span>
+          <span class="tech-pill">AWS EKS</span>
+          <span class="tech-pill">ArgoCD</span>
+          <span class="tech-pill">Helm</span>
+          <span class="tech-pill">Trivy</span>
+          <span class="tech-pill">SonarQube</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: AWS Terraform -->
+      <div class="project-row reveal delay-1">
+        <div class="proj-head">
+          <div>
+            <h3 class="proj-title">Multi-Environment AWS Platform</h3>
+            <span class="proj-type">Infrastructure as Code</span>
+          </div>
+          <div class="proj-status" style="color: var(--accent-cyan); border-color: rgba(6,182,212,0.3); background: rgba(6,182,212,0.1);">
+            <i class="fas fa-check-circle"></i> Every 6h Drift Detection
+          </div>
+        </div>
+
+        <p class="proj-desc" style="margin-top: 16px;">Fully immutable, DRY Terraform codebase provisioning a complete AWS platform (VPC, EKS, RDS Aurora, ALB, Route53) across dev, staging, and production from a single source of truth — any developer spins up a full environment with one command.</p>
+
+        <ul class="proj-bullets">
+          <li>Automated infrastructure validation via scheduled GitHub Actions.</li>
+          <li>Secure remote state management using S3 backends and DynamoDB locking.</li>
+          <li>Provisioned highly available multi-AZ network architecture with strict security group isolation.</li>
+        </ul>
+
+        <div class="proj-tech">
+          <span class="tech-pill">Terraform</span>
+          <span class="tech-pill">AWS VPC</span>
+          <span class="tech-pill">AWS EKS</span>
+          <span class="tech-pill">RDS Aurora</span>
+          <span class="tech-pill">ALB</span>
+          <span class="tech-pill">Route53</span>
+          <span class="tech-pill">GitHub Actions</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Scalable Web Infra -->
+      <div class="project-row reveal delay-2">
+        <div class="proj-head">
+          <div>
+            <h3 class="proj-title">Scalable Web Infrastructure</h3>
+            <span class="proj-type">AWS High Availability</span>
+          </div>
+        </div>
+
+        <p class="proj-desc" style="margin-top: 16px;">Designed and deployed a highly available, fault-tolerant web architecture focusing on resilience and automated traffic distribution across multiple AWS Availability Zones.</p>
+
+        <ul class="proj-bullets">
+          <li>Implemented Auto Scaling Groups (ASG) combined with Application Load Balancers (ALB) to handle dynamic traffic spikes autonomously.</li>
+          <li>Achieved zero downtime during simulated zone failures by ensuring multi-AZ redundancy.</li>
+          <li>Hardened network security via custom VPCs, private subnets, and strict IAM policies.</li>
+        </ul>
+
+        <div class="proj-tech">
+          <span class="tech-pill">AWS EC2</span>
+          <span class="tech-pill">AWS ASG</span>
+          <span class="tech-pill">AWS ALB</span>
+          <span class="tech-pill">VPC Networking</span>
+          <span class="tech-pill">Auto Scaling</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ========== CONTACT SECTION ========== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">&lt;contact /&gt;</span>
-        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-        <div class="section-line"></div>
-        <p class="section-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
-      </div>
-      <div class="contact-grid" data-animate>
-        <div class="contact-info">
-          <h3 class="contact-heading">Let's Build Something Together</h3>
-          <p class="contact-text">
-            Whether you need help with cloud architecture, CI/CD pipelines, or infrastructure automation — 
-            I'm always open to discussing new opportunities and challenges.
-          </p>
-          <div class="contact-details">
-            <div class="contact-detail-item">
-              <div class="contact-icon-wrapper">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">pratikkulkarni635@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact-detail-item">
-              <div class="contact-icon-wrapper">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <span class="contact-label">Location</span>
-                <span class="contact-value">Bengaluru, Karnataka, India</span>
-              </div>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/prateek-kulkarni-4744561b5" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" id="social-twitter" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-        <form class="contact-form" id="contact-form">
-          <div class="form-group">
-            <label for="contact-name" class="form-label">Name</label>
-            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-email" class="form-label">Email</label>
-            <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-message" class="form-label">Message</label>
-            <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
+  <section id="contact" class="container" style="margin-bottom: 80px;">
+    <div class="section-header reveal text-center" style="text-align: center; margin: 0 auto 48px; display: flex; flex-direction: column; align-items: center;">
+      <span class="section-tag" style="margin: 0 auto 12px;">04. CONTACT</span>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-desc">Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+    </div>
+
+    <div class="contact-grid reveal delay-1">
+      
+      <a href="mailto:pratikkulkarni635@gmail.com" class="contact-card">
+        <i class="fas fa-envelope contact-icon text-cyan"></i>
+        <div class="contact-label">EMAIL</div>
+        <div class="contact-val">pratikkulkarni635@gmail.com</div>
+      </a>
+
+      <a href="https://github.com/putta132" target="_blank" rel="noreferrer" class="contact-card">
+        <i class="fab fa-github contact-icon text-purple"></i>
+        <div class="contact-label">GITHUB</div>
+        <div class="contact-val">github.com/putta132</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prateek-kulkarni-4744561b5/" target="_blank" rel="noreferrer" class="contact-card">
+        <i class="fab fa-linkedin contact-icon text-cyan"></i>
+        <div class="contact-label">LINKEDIN</div>
+        <div class="contact-val">in/prateek-kulkarni</div>
+      </a>
+
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" id="footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <a href="#home" class="footer-logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-            <div style="position: relative; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;">
-              <span style="position: absolute; width: 100%; height: 100%; background-color: #22c55e; border-radius: 50%; opacity: 0.7; animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
-              <span style="position: relative; width: 12px; height: 12px; background-color: #22c55e; border-radius: 50%;"></span>
-            </div>
-            <span>Available for work</span>
-          </a>
-          <p class="footer-tagline" style="margin-top: 16px;">Building infrastructure that scales.</p>
-        </div>
-        <div class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/prateek-kulkarni-4744561b5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Prateek Kulkarni. All rights reserved.</p>
-        <p>Crafted with <i class="fas fa-heart" style="color: var(--accent-primary);"></i> and automation.</p>
-      </div>
+      <p>Built with <i class="fas fa-heart text-purple"></i> by Prateek Kulkarni. 2026</p>
     </div>
   </footer>
-
-  <!-- ========== PROJECT MODALS ========== -->
-  <!-- Modal 1 -->
-  <div class="project-modal" id="modal-cicd">
-    <div class="modal-content-box">
-      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
-      <h3 class="modal-title">Production CI/CD Pipeline</h3>
-      <ul class="modal-list">
-        <li><i class="fas fa-check-circle"></i> Architected a multi-stage GitHub Actions CI/CD pipeline for 6 containerized microservices (NovaPay fintech platform) — replacing manual SSH deployments and reducing deployment time from 3 hours to under 8 minutes.</li>
-        <li><i class="fas fa-check-circle"></i> Implemented GitOps delivery with ArgoCD watching a dedicated gitops-configs repo; ArgoCD auto-deploys Helm chart changes to AWS EKS within 2 minutes of a merge to main — zero manual kubectl commands required.</li>
-        <li><i class="fas fa-check-circle"></i> Integrated Trivy container scanning and SonarQube quality gates into the pipeline — blocking merges on CRITICAL CVEs and enforcing ≥70% code coverage; reduced change failure rate from 40% to under 5%.</li>
-        <li><i class="fas fa-check-circle"></i> Implemented Blue/Green deployments using Kubernetes service selectors with k6 smoke tests during traffic switch — achieving zero-downtime releases; rollback executed via a single git revert + push.</li>
-        <li><i class="fas fa-check-circle"></i> Configured AWS Secrets Manager with OIDC-based GitHub Actions authentication and External Secrets Operator on Kubernetes — zero hardcoded credentials across entire codebase, verified via git grep.</li>
-        <li><i class="fas fa-check-circle"></i> Built Prometheus + Grafana dashboards tracking all four DORA metrics (Deployment Frequency, Lead Time, Change Failure Rate, MTTR) sourced from GitHub Events API and PagerDuty.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="project-modal" id="modal-aws">
-    <div class="modal-content-box">
-      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
-      <h3 class="modal-title">Multi-Environment AWS Platform</h3>
-      <ul class="modal-list">
-        <li><i class="fas fa-check-circle"></i> Eliminated ClickOps-related drift incidents by migrating 3 environments (dev/staging/prod) to Terraform IaC, resulting in 100% reproducible infrastructure from a single codebase with zero hardcoded values.</li>
-        <li><i class="fas fa-check-circle"></i> Built reusable Terraform modules for VPC (multi-AZ, public/private/database subnets), EKS (managed node groups, OIDC, cluster add-ons), RDS Aurora (multi-AZ, KMS encryption), IAM (least-privilege, no wildcard permissions), and ALB/Route53.</li>
-        <li><i class="fas fa-check-circle"></i> Configured S3 + DynamoDB remote state with separate state keys per environment (blast-radius isolation); demonstrated DynamoDB state lock preventing concurrent applies — concurrent runs blocked with lock error showing holder ID.</li>
-        <li><i class="fas fa-check-circle"></i> Integrated tfsec and Checkov policy-as-code scanning into GitHub Actions CI on every PR; achieved zero HIGH-severity findings with complete VPC + EKS + RDS Aurora provisioning in under 15 minutes from scratch.</li>
-        <li><i class="fas fa-check-circle"></i> Added scheduled terraform plan (every 6 hrs) for automated drift detection with Slack alerts on non-zero exit codes; secrets accessed via AWS Secrets Manager data blocks — never in .tfvars or state in plaintext.</li>
-        <li><i class="fas fa-check-circle"></i> Infrastructure outputs (EKS Cluster ARN, ECR Repository URL, RDS Endpoint, VPC Subnet IDs) consumed directly by Project 01’s CI/CD pipeline — full dev/staging/prod environment created with one command: ./scripts/deploy.sh dev.</li>
-      </ul>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>

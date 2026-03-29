@@ -140,48 +140,168 @@
 
   <!-- ========== SKILLS SECTION ========== -->
   <section id="skills" class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">02. SKILLS</span>
-      <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
-      <p class="section-desc">Tools and technologies I use to build, deploy, and monitor scalable cloud platforms.</p>
+    <div class="section-header reveal" style="margin-bottom: 32px;">
+      <span class="section-tag" style="color: var(--accent-cyan); display: flex; align-items: center; gap: 8px;"><div style="width: 8px; height: 8px; background: var(--accent-cyan); border-radius: 50%;"></div> TECH STACK</span>
+      <h2 class="section-title">Tools &amp; <span class="text-cyan">Technologies</span></h2>
+      <p class="section-desc" style="max-width: 700px;">A deep, battle-tested toolkit spanning cloud, containers, observability, and security.</p>
     </div>
 
-    <div class="skills-grid reveal delay-1">
-      <!-- Category 1 -->
-      <div class="skill-col">
-        <h3 class="skill-col-title">
-          <i class="fas fa-cloud text-cyan"></i> Cloud & Platform
-        </h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><i class="fab fa-aws"></i> AWS (EC2, S3, VPC)</span>
-          <span class="skill-tag"><i class="fas fa-server"></i> ALB & Auto Scaling</span>
-          <span class="skill-tag"><i class="fab fa-linux"></i> Linux Administration</span>
+    <!-- Filter Bar -->
+    <div class="skills-filter reveal delay-1" id="skills-filter">
+      <button class="filter-btn active" data-filter="all"><span class="all-badge">All</span></button>
+      <button class="filter-btn" data-filter="cloud"><i class="fas fa-cloud text-cyan"></i> Cloud Platform</button>
+      <button class="filter-btn" data-filter="iac"><i class="fas fa-hammer text-purple"></i> Infrastructure as Code</button>
+      <button class="filter-btn" data-filter="containers"><i class="fas fa-box text-cyan"></i> Containerisation</button>
+      <button class="filter-btn" data-filter="cicd"><i class="fas fa-sync-alt text-cyan"></i> CI/CD & GitOps</button>
+      <button class="filter-btn" data-filter="observ"><i class="fas fa-chart-line text-green"></i> Observability</button>
+      <button class="filter-btn" data-filter="secure"><i class="fas fa-shield-alt text-cyan"></i> Security & Secrets</button>
+      <button class="filter-btn" data-filter="script"><i class="fas fa-laptop-code text-cyan"></i> Scripting & Languages</button>
+      <button class="filter-btn" data-filter="qa"><i class="fas fa-chart-area text-purple"></i> Load Testing & QA</button>
+      <button class="filter-btn" data-filter="practice"><i class="fas fa-infinity text-cyan"></i> Practices</button>
+    </div>
+
+    <div class="skills-grid reveal delay-2" id="skills-grid">
+      
+      <!-- 1. Cloud Platform -->
+      <div class="skill-category-card" data-category="cloud" style="--card-color: #f59e0b;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-cloud text-cyan"></i> Cloud Platform</div>
+          <div class="s-card-count">8 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fab fa-aws" style="color:#ff9900;"></i> AWS</div>
+          <div class="s-tool-pill"><i class="fas fa-network-wired text-cyan"></i> VPC</div>
+          <div class="s-tool-pill"><i class="fas fa-server"></i> EKS</div>
+          <div class="s-tool-pill"><i class="fas fa-database text-purple"></i> RDS Aurora</div>
+          <div class="s-tool-pill"><i class="fas fa-box" style="color:#d97706;"></i> S3</div>
+          <div class="s-tool-pill"><i class="fas fa-lock" style="color:#f59e0b;"></i> IAM</div>
+          <div class="s-tool-pill"><i class="fas fa-globe text-cyan"></i> Route 53</div>
+          <div class="s-tool-pill"><i class="fas fa-chart-pie" style="color:#10b981;"></i> CloudWatch</div>
         </div>
       </div>
 
-      <!-- Category 2 -->
-      <div class="skill-col">
-        <h3 class="skill-col-title">
-          <i class="fas fa-box text-purple"></i> Containers & Orchestration
-        </h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-          <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
-          <span class="skill-tag"><i class="fas fa-ship"></i> Helm</span>
+      <!-- 2. IaC -->
+      <div class="skill-category-card" data-category="iac" style="--card-color: #8b5cf6;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-hammer text-purple"></i> Infrastructure as Code</div>
+          <div class="s-card-count">4 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-wrench" style="color:#8b5cf6;"></i> Terraform</div>
+          <div class="s-tool-pill"><i class="fas fa-tools" style="color:#8b5cf6;"></i> Terragrunt</div>
+          <div class="s-tool-pill"><i class="fas fa-shield-alt text-cyan"></i> tfsec</div>
+          <div class="s-tool-pill"><i class="fas fa-check-square" style="color:#10b981;"></i> Checkov</div>
         </div>
       </div>
 
-      <!-- Category 3 -->
-      <div class="skill-col">
-        <h3 class="skill-col-title">
-          <i class="fas fa-code-branch text-green"></i> Automation & CI/CD
-        </h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><i class="fas fa-cubes"></i> Terraform</span>
-          <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
-          <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins Pipeline</span>
+      <!-- 3. Containerisation -->
+      <div class="skill-category-card" data-category="containers" style="--card-color: #06b6d4;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-box text-cyan"></i> Containerisation</div>
+          <div class="s-card-count">5 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fab fa-docker text-cyan"></i> Docker</div>
+          <div class="s-tool-pill"><i class="fas fa-dharmachakra" style="color:#326ce5;"></i> Kubernetes</div>
+          <div class="s-tool-pill"><i class="fas fa-ship text-cyan"></i> Helm</div>
+          <div class="s-tool-pill"><i class="fas fa-sync text-cyan"></i> ArgoCD</div>
+          <div class="s-tool-pill"><i class="fas fa-vial" style="color:#10b981;"></i> kind</div>
         </div>
       </div>
+
+      <!-- 4. CI/CD & GitOps -->
+      <div class="skill-category-card" data-category="cicd" style="--card-color: #0ea5e9;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-sync-alt text-cyan"></i> CI/CD & GitOps</div>
+          <div class="s-card-count">6 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fab fa-github" style="color:#f472b6;"></i> GitHub Actions</div>
+          <div class="s-tool-pill"><i class="fas fa-sync text-cyan"></i> ArgoCD</div>
+          <div class="s-tool-pill"><i class="fab fa-git-alt" style="color:#f1502f;"></i> Git</div>
+          <div class="s-tool-pill"><i class="fas fa-cube" style="color:#d97706;"></i> Docker Hub</div>
+          <div class="s-tool-pill"><i class="fas fa-archive" style="color:#f59e0b;"></i> Amazon ECR</div>
+          <div class="s-tool-pill"><i class="fas fa-check-circle" style="color:#10b981;"></i> SonarQube</div>
+        </div>
+      </div>
+
+      <!-- 5. Observability -->
+      <div class="skill-category-card" data-category="observ" style="--card-color: #10b981;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-chart-line text-green"></i> Observability</div>
+          <div class="s-card-count">6 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-chart-area" style="color:#a78bfa;"></i> Prometheus</div>
+          <div class="s-tool-pill"><i class="fas fa-columns" style="color:#f59e0b;"></i> Grafana</div>
+          <div class="s-tool-pill"><i class="fas fa-file-alt" style="color:#d97706;"></i> Loki</div>
+          <div class="s-tool-pill"><i class="fas fa-search text-cyan"></i> Jaeger</div>
+          <div class="s-tool-pill"><i class="fas fa-satellite-dish" style="color:#f43f5e;"></i> OpenTelemetry</div>
+          <div class="s-tool-pill"><i class="fas fa-bell" style="color:#f59e0b;"></i> AlertManager</div>
+        </div>
+      </div>
+
+      <!-- 6. Security -->
+      <div class="skill-category-card" data-category="secure" style="--card-color: #ef4444;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-shield-alt text-cyan"></i> Security & Secrets</div>
+          <div class="s-card-count">6 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-search" style="color:#38bdf8;"></i> Trivy (SBOM)</div>
+          <div class="s-tool-pill"><i class="fas fa-shield-alt text-cyan"></i> tfsec</div>
+          <div class="s-tool-pill"><i class="fas fa-check-square" style="color:#10b981;"></i> Checkov</div>
+          <div class="s-tool-pill"><i class="fas fa-key" style="color:#f59e0b;"></i> Secrets Manager</div>
+          <div class="s-tool-pill"><i class="fas fa-lock" style="color:#f59e0b;"></i> Ext. Secrets Operator</div>
+          <div class="s-tool-pill"><i class="fas fa-globe text-cyan"></i> OIDC</div>
+        </div>
+      </div>
+
+      <!-- 7. Scripting & Languages -->
+      <div class="skill-category-card" data-category="script" style="--card-color: #f59e0b;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-laptop-code text-cyan"></i> Scripting & Languages</div>
+          <div class="s-card-count">5 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-terminal text-cyan"></i> Bash</div>
+          <div class="s-tool-pill"><i class="fas fa-file-code" style="color:#f8fafc;"></i> YAML</div>
+          <div class="s-tool-pill"><i class="fas fa-wrench" style="color:#8b5cf6;"></i> HCL (Terraform)</div>
+          <div class="s-tool-pill"><i class="fab fa-node-js" style="color:#10b981;"></i> Node.js</div>
+          <div class="s-tool-pill"><i class="fas fa-code"></i> JSON</div>
+        </div>
+      </div>
+
+      <!-- 8. QA -->
+      <div class="skill-category-card" data-category="qa" style="--card-color: #f43f5e;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-chart-area text-purple"></i> Load Testing & QA</div>
+          <div class="s-card-count">2 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-bolt" style="color:#f59e0b;"></i> k6</div>
+          <div class="s-tool-pill"><i class="fas fa-check-circle" style="color:#10b981;"></i> SonarQube</div>
+        </div>
+      </div>
+
+      <!-- 9. Practices -->
+      <div class="skill-category-card" data-category="practice" style="--card-color: #14b8a6;">
+        <div class="s-card-header">
+          <div class="s-card-title"><i class="fas fa-infinity text-cyan"></i> Practices</div>
+          <div class="s-card-count">8 tools</div>
+        </div>
+        <div class="s-card-body">
+          <div class="s-tool-pill"><i class="fas fa-sync" style="color:#38bdf8;"></i> GitOps</div>
+          <div class="s-tool-pill"><i class="fas fa-shield-alt text-cyan"></i> DevSecOps</div>
+          <div class="s-tool-pill"><i class="fas fa-traffic-light" style="color:#10b981;"></i> Blue/Green Deploy</div>
+          <div class="s-tool-pill"><i class="fas fa-chart-line" style="color:#f472b6;"></i> DORA Metrics</div>
+          <div class="s-tool-pill"><i class="fas fa-bullseye" style="color:#ef4444;"></i> SLO/SLA Alerting</div>
+          <div class="s-tool-pill"><i class="fas fa-search" style="color:#a78bfa;"></i> Drift Detection</div>
+          <div class="s-tool-pill"><i class="fas fa-bomb" style="color:#f43f5e;"></i> Chaos Engineering</div>
+          <div class="s-tool-pill"><i class="fas fa-ambulance" style="color:#f59e0b;"></i> Incident Response</div>
+        </div>
+      </div>
+
     </div>
   </section>
 

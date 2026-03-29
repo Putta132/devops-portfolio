@@ -374,50 +374,105 @@ section {
 }
 
 /* --- Skills Categories --- */
+.skills-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.2);
+  color: var(--text-primary);
+}
+.filter-btn.active .all-badge {
+  background: var(--accent-blue, #3b82f6);
+}
+.all-badge {
+  background: var(--accent-purple);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
 }
-.skill-col {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: 16px;
+.skill-category-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 2px solid var(--card-color, var(--accent-cyan));
+  border-radius: 12px;
   padding: 24px;
   backdrop-filter: blur(12px);
-  border-top: 2px solid var(--accent-cyan);
+  display: flex;
+  flex-direction: column;
 }
-.skill-col:nth-child(2) { border-top-color: var(--accent-purple); }
-.skill-col:nth-child(3) { border-top-color: var(--accent-green); }
+.skill-category-card.hidden {
+  display: none !important;
+}
 
-.skill-col-title {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.s-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.s-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
   gap: 10px;
 }
-.skill-tag {
+.s-card-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.05);
+  padding: 4px 10px;
+  border-radius: 16px;
+}
+.s-card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.s-tool-pill {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border-light);
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
   padding: 8px 14px;
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   transition: all 0.2s ease;
 }
-.skill-tag:hover {
-  background: rgba(6, 182, 212, 0.1);
-  border-color: var(--accent-cyan);
+.s-tool-pill:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--card-color, var(--accent-cyan));
   color: var(--text-primary);
+  transform: translateY(-2px);
 }
 
 /* --- Projects Metrics Cards --- */

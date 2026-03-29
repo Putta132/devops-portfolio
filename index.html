@@ -23,15 +23,15 @@
   <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo" id="nav-logo">
-        <span class="logo-bracket">&lt;</span>DevOps<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      <a href="#home" class="nav-logo" id="nav-logo" style="font-family: var(--font-mono); color: var(--accent-primary); letter-spacing: 1px;">
+        <span class="logo-bracket">&lt;</span>PRATEEK <span class="logo-slash">/&gt;</span>
       </a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
         <li><a href="#about" class="nav-link" data-section="about">About</a></li>
-        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
-        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link btn btn-sm btn-outline" style="border-radius: 6px; padding: 6px 16px; margin-left: 8px;" data-section="contact">Hire Me</a></li>
       </ul>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span class="hamburger-line"></span>
@@ -108,55 +108,57 @@
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-tag">&lt;about /&gt;</span>
-        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <h2 class="section-title">The Engineer Behind <br/><span class="gradient-text">the Infrastructure</span></h2>
         <div class="section-line"></div>
+        <p class="section-desc">I turn complex infrastructure challenges into elegant, automated solutions.</p>
       </div>
-      <div class="about-grid" data-animate>
-        <div class="about-image-wrapper">
-          <div class="about-image-frame">
-            <img src="images/profile.png" alt="Prateek Kulkarni — DevOps Engineer" class="about-image" />
-            <div class="about-image-border"></div>
+      <div class="about-bento-grid" data-animate>
+        
+        <!-- Main Text Card -->
+        <div class="bento-card bento-main">
+          <div class="terminal-header" style="background: transparent; padding: 0; border: none; margin-bottom: 24px;">
+            <span class="terminal-dot red" style="width:10px;height:10px;"></span>
+            <span class="terminal-dot yellow" style="width:10px;height:10px;"></span>
+            <span class="terminal-dot green" style="width:10px;height:10px;"></span>
+            <span class="terminal-title" style="margin-left: 12px;">~/about/prateek.md</span>
           </div>
-          <div class="about-badge">
-            <i class="fab fa-aws"></i>
-            <span>AWS Certified</span>
+          <p class="about-text">
+            Results-driven <span class="highlight-cyan">DevOps & Cloud Engineer</span> with <span class="highlight-cyan">2+ years</span> of hands-on experience designing and operating cloud-native infrastructure on AWS — from IaC provisioning to Kubernetes orchestration and full-stack observability.
+          </p>
+          <p class="about-text">
+            Proven ability to architect production-grade <span class="highlight-purple">CI/CD pipelines</span> using GitHub Actions, ArgoCD, and GitOps principles — delivering <span class="highlight-purple">zero-downtime Blue/Green deployments</span> to AWS EKS. Skilled in provisioning multi-environment platforms via Terraform.
+          </p>
+          <div class="about-details" style="margin-top: 32px; display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="about-detail-item" style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-muted);"><i class="fas fa-map-marker-alt" style="color: var(--accent-primary);"></i> Bengaluru, India</div>
+            <div class="about-detail-item" style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-muted);"><i class="fab fa-aws" style="color: var(--accent-primary);"></i> AWS Certified</div>
           </div>
         </div>
-        <div class="about-content">
-          <h3 class="about-heading">Cloud &amp; DevOps Engineer</h3>
-          <p class="about-text">
-            Results-driven DevOps Engineer with 2+ years of experience in cloud support and technical infrastructure. Hands-on expertise in architecting production-grade CI/CD pipelines with GitOps delivery, Blue/Green deployments, and DORA metrics tracking, as well as provisioning multi-environment AWS infrastructure using Terraform IaC with remote state, policy-as-code, and automated drift detection.
-          </p>
-          <p class="about-text">
-            Proven ability to implement end-to-end DevSecOps pipelines with shift-left security scanning, Vault-based secrets management, and zero plaintext secrets policies. Built and integrated two interconnected platforms — a GitOps-driven CI/CD system (Project 01) deploying into Terraform-provisioned AWS infrastructure (Project 02) — delivering 100% reproducible environments with zero manual steps. Seeking a DevOps role to drive reliability, security, and automation at scale.
-          </p>
-          <div class="about-details">
-            <div class="about-detail-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Bengaluru, Karnataka, India</span>
-            </div>
-            <div class="about-detail-item">
-              <i class="fas fa-briefcase"></i>
-              <span>Cloud Support Engineer at Placid Technologies</span>
-            </div>
-            <div class="about-detail-item">
-              <i class="fas fa-briefcase"></i>
-              <span>Technical Support Engineer at Boston IT Solutions</span>
-            </div>
-          </div>
 
-          <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-light); font-size: 1.1rem; font-weight: 600;">Key Achievements</h4>
-          <ul style="list-style-type: none; padding-left: 0; margin-bottom: 2rem;">
-            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Reduced deployment time from 3 hours to under 8 minutes</strong> by architecting a GitOps-driven CI/CD pipeline (GitHub Actions + ArgoCD) for 6 microservices — change failure rate dropped from 40% to under 5%.</li>
-            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Achieved 100% reproducible infrastructure</strong> by codifying 3-environment AWS platform (dev/staging/prod) with Terraform — eliminating all manual ClickOps drift incidents.</li>
-            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Delivered zero HIGH-severity Checkov findings</strong> across entire Terraform codebase; full VPC + EKS + RDS Aurora provisioning completed in under 15 minutes from scratch.</li>
-            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Reduced credential attack surface to zero</strong> by implementing HashiCorp Vault dynamic secrets and AWS Secrets Manager (OIDC) — no plaintext secrets across both platforms.</li>
-            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.8rem; font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);"><i class="fas fa-check-circle" style="color: var(--accent-primary); position: absolute; left: 0; top: 0.25rem;"></i> <strong>Identified and remediated 3 critical CVEs and 14 hardcoded credentials</strong> through automated SAST (Semgrep), Snyk dependency scanning, and Trivy container scanning integrated into CI/CD.</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-handshake"></i> Let's Connect
-          </a>
+        <!-- Stat Cards -->
+        <div class="bento-card bento-stat">
+          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">👨‍💻</div>
+          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">2+</h3>
+          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">YEARS EXPERIENCE</p>
         </div>
+
+        <div class="bento-card bento-stat">
+          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">⚡</div>
+          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">18x</h3>
+          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">FASTER DEPLOYMENTS</p>
+        </div>
+
+        <div class="bento-card bento-stat">
+          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">🚀</div>
+          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">&lt;5%</h3>
+          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">CHANGE FAILURE RATE</p>
+        </div>
+
+        <div class="bento-card bento-stat">
+          <div class="stat-icon" style="font-size: 2rem; margin-bottom: 12px;">🛡️</div>
+          <h3 class="stat-value gradient-text" style="font-size: 2.5rem; font-weight: 800; line-height: 1;">0</h3>
+          <p class="stat-label" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--text-muted); margin-top: 8px;">HIGH SECURITY FINDINGS</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -233,90 +235,68 @@
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-tag">&lt;skills /&gt;</span>
-        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+        <h2 class="section-title">Tools &amp; <span class="gradient-text">Technologies</span></h2>
         <div class="section-line"></div>
-        <p class="section-desc">Tools and technologies I use to build, deploy, and manage cloud infrastructure.</p>
+        <p class="section-desc">A deep, battle-tested toolkit spanning cloud, containers, observability, and security.</p>
       </div>
-      <div class="skills-grid" data-animate>
+      <div class="skills-category-grid" data-animate>
 
-        <div class="skill-card" id="skill-aws">
-          <div class="skill-icon-wrapper">
-            <i class="fab fa-aws"></i>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-cloud"></i> Cloud Platform</h3>
           </div>
-          <h4 class="skill-name">AWS</h4>
-          <p class="skill-detail">EC2, S3, VPC, Lambda, RDS, ECS</p>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fab fa-aws"></i> AWS</div>
+            <div class="skill-badge"><i class="fab fa-linux"></i> Linux</div>
+          </div>
         </div>
 
-        <div class="skill-card" id="skill-docker">
-          <div class="skill-icon-wrapper">
-            <i class="fab fa-docker"></i>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-box"></i> Containerisation</h3>
           </div>
-          <h4 class="skill-name">Docker</h4>
-          <p class="skill-detail">Containers, Compose, Registry</p>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fab fa-docker"></i> Docker</div>
+            <div class="skill-badge"><svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor" style="width:14px;height:14px;"><path d="M15.9.476a2.14 2.14 0 0 0-.823.218L3.932 6.01a2.133 2.133 0 0 0-1.1 1.39l-2.78 12.55a2.133 2.133 0 0 0 .272 1.674l7.63 10.283A2.133 2.133 0 0 0 9.6 32.9h14.8a2.133 2.133 0 0 0 1.646-.993l7.63-10.283a2.133 2.133 0 0 0 .272-1.674L31.17 7.4a2.133 2.133 0 0 0-1.1-1.39L18.923.694A2.133 2.133 0 0 0 15.9.476zm.1 3.474a.423.423 0 0 1 .184.042l.54.241a.423.423 0 0 1 .237.335l.073.59a7.573 7.573 0 0 1 2.7 1.1l.478-.34a.423.423 0 0 1 .4-.04l.51.273a.423.423 0 0 1 .2.355l-.023.59a7.573 7.573 0 0 1 1.97 2.15l.55-.15a.423.423 0 0 1 .39.118l.39.41a.423.423 0 0 1 .073.402l-.214.553a7.573 7.573 0 0 1 .927 2.8l.588.103a.423.423 0 0 1 .316.26l.18.558a.423.423 0 0 1-.107.41l-.43.403a7.573 7.573 0 0 1-.37 2.96l.431.389a.423.423 0 0 1 .107.41l-.178.558a.423.423 0 0 1-.316.26l-.583.1a7.573 7.573 0 0 1-1.35 2.583l.273.503a.423.423 0 0 1-.029.4l-.35.46a.423.423 0 0 1-.38.162l-.59-.065a7.573 7.573 0 0 1-2.22 1.8l.102.587a.423.423 0 0 1-.155.378l-.49.337a.423.423 0 0 1-.404.033l-.527-.25a7.573 7.573 0 0 1-2.763.717l-.07.59a.423.423 0 0 1-.267.345l-.558.18a.423.423 0 0 1-.404-.108l-.398-.43a7.573 7.573 0 0 1-2.867-.34l-.378.434a.423.423 0 0 1-.397.143l-.57-.11a.423.423 0 0 1-.3-.283l-.165-.565a7.573 7.573 0 0 1-2.507-1.45l-.494.283a.423.423 0 0 1-.402-.017l-.47-.34a.423.423 0 0 1-.17-.373l.058-.59a7.573 7.573 0 0 1-1.757-2.3l-.568.157a.423.423 0 0 1-.393-.112l-.32-.463a.423.423 0 0 1-.022-.41l.262-.527a7.573 7.573 0 0 1-.66-2.86l-.59-.075a.423.423 0 0 1-.35-.265l-.12-.574a.423.423 0 0 1 .153-.39l.464-.37a7.573 7.573 0 0 1 .5-2.9l-.418-.415a.423.423 0 0 1-.087-.407l.192-.55a.423.423 0 0 1 .327-.27l.587-.087a7.573 7.573 0 0 1 1.38-2.56l-.264-.51a.423.423 0 0 1 .043-.404l.362-.45a.423.423 0 0 1 .383-.153l.585.076a7.573 7.573 0 0 1 2.17-1.767l-.093-.59a.423.423 0 0 1 .167-.375l.498-.328a.423.423 0 0 1 .404-.022l.52.257a7.573 7.573 0 0 1 2.78-.69l.078-.59a.423.423 0 0 1 .236-.33l.54-.241a.423.423 0 0 1 .184-.042z"/></svg> Kubernetes</div>
+          </div>
         </div>
 
-        <div class="skill-card" id="skill-kubernetes">
-          <div class="skill-icon-wrapper">
-            <svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M15.9.476a2.14 2.14 0 0 0-.823.218L3.932 6.01a2.133 2.133 0 0 0-1.1 1.39l-2.78 12.55a2.133 2.133 0 0 0 .272 1.674l7.63 10.283A2.133 2.133 0 0 0 9.6 32.9h14.8a2.133 2.133 0 0 0 1.646-.993l7.63-10.283a2.133 2.133 0 0 0 .272-1.674L31.17 7.4a2.133 2.133 0 0 0-1.1-1.39L18.923.694A2.133 2.133 0 0 0 15.9.476zm.1 3.474a.423.423 0 0 1 .184.042l.54.241a.423.423 0 0 1 .237.335l.073.59a7.573 7.573 0 0 1 2.7 1.1l.478-.34a.423.423 0 0 1 .4-.04l.51.273a.423.423 0 0 1 .2.355l-.023.59a7.573 7.573 0 0 1 1.97 2.15l.55-.15a.423.423 0 0 1 .39.118l.39.41a.423.423 0 0 1 .073.402l-.214.553a7.573 7.573 0 0 1 .927 2.8l.588.103a.423.423 0 0 1 .316.26l.18.558a.423.423 0 0 1-.107.41l-.43.403a7.573 7.573 0 0 1-.37 2.96l.431.389a.423.423 0 0 1 .107.41l-.178.558a.423.423 0 0 1-.316.26l-.583.1a7.573 7.573 0 0 1-1.35 2.583l.273.503a.423.423 0 0 1-.029.4l-.35.46a.423.423 0 0 1-.38.162l-.59-.065a7.573 7.573 0 0 1-2.22 1.8l.102.587a.423.423 0 0 1-.155.378l-.49.337a.423.423 0 0 1-.404.033l-.527-.25a7.573 7.573 0 0 1-2.763.717l-.07.59a.423.423 0 0 1-.267.345l-.558.18a.423.423 0 0 1-.404-.108l-.398-.43a7.573 7.573 0 0 1-2.867-.34l-.378.434a.423.423 0 0 1-.397.143l-.57-.11a.423.423 0 0 1-.3-.283l-.165-.565a7.573 7.573 0 0 1-2.507-1.45l-.494.283a.423.423 0 0 1-.402-.017l-.47-.34a.423.423 0 0 1-.17-.373l.058-.59a7.573 7.573 0 0 1-1.757-2.3l-.568.157a.423.423 0 0 1-.393-.112l-.32-.463a.423.423 0 0 1-.022-.41l.262-.527a7.573 7.573 0 0 1-.66-2.86l-.59-.075a.423.423 0 0 1-.35-.265l-.12-.574a.423.423 0 0 1 .153-.39l.464-.37a7.573 7.573 0 0 1 .5-2.9l-.418-.415a.423.423 0 0 1-.087-.407l.192-.55a.423.423 0 0 1 .327-.27l.587-.087a7.573 7.573 0 0 1 1.38-2.56l-.264-.51a.423.423 0 0 1 .043-.404l.362-.45a.423.423 0 0 1 .383-.153l.585.076a7.573 7.573 0 0 1 2.17-1.767l-.093-.59a.423.423 0 0 1 .167-.375l.498-.328a.423.423 0 0 1 .404-.022l.52.257a7.573 7.573 0 0 1 2.78-.69l.078-.59a.423.423 0 0 1 .236-.33l.54-.241a.423.423 0 0 1 .184-.042z"/></svg>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-code"></i> Infrastructure as Code</h3>
           </div>
-          <h4 class="skill-name">Kubernetes</h4>
-          <p class="skill-detail">EKS, Pods, Services, Helm</p>
+          <div class="skill-badges">
+            <div class="skill-badge"><svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor" style="width:14px;height:14px;"><path d="M12.042 6.858L20.167 11.573V21.002L12.042 16.287Z"/><path d="M21.167 11.573L29.292 6.858V16.287L21.167 21.002Z"/><path d="M2.917 2.143L11.042 6.858V16.287L2.917 11.573Z"/><path d="M12.042 17.573L20.167 22.288V31.717L12.042 27.002Z"/></svg> Terraform</div>
+          </div>
         </div>
 
-        <div class="skill-card" id="skill-linux">
-          <div class="skill-icon-wrapper">
-            <i class="fab fa-linux"></i>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-infinity"></i> CI/CD &amp; GitOps</h3>
           </div>
-          <h4 class="skill-name">Linux</h4>
-          <p class="skill-detail">Ubuntu, CentOS, Shell Scripting</p>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-badge"><i class="fas fa-sync-alt"></i> CI/CD Pipelines</div>
+          </div>
         </div>
 
-        <div class="skill-card" id="skill-terraform">
-          <div class="skill-icon-wrapper">
-            <svg class="skill-svg-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M12.042 6.858L20.167 11.573V21.002L12.042 16.287Z"/><path d="M21.167 11.573L29.292 6.858V16.287L21.167 21.002Z"/><path d="M2.917 2.143L11.042 6.858V16.287L2.917 11.573Z"/><path d="M12.042 17.573L20.167 22.288V31.717L12.042 27.002Z"/></svg>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-chart-line"></i> Observability</h3>
           </div>
-          <h4 class="skill-name">Terraform</h4>
-          <p class="skill-detail">IaC, Modules, State Management</p>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fas fa-fire-alt"></i> Prometheus</div>
+            <div class="skill-badge"><i class="fas fa-chart-pie"></i> Grafana</div>
+          </div>
         </div>
 
-        <div class="skill-card" id="skill-git">
-          <div class="skill-icon-wrapper">
-            <i class="fab fa-git-alt"></i>
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3 class="skill-category-title"><i class="fas fa-terminal"></i> Scripting</h3>
           </div>
-          <h4 class="skill-name">Git</h4>
-          <p class="skill-detail">GitHub, GitLab, Version Control</p>
-        </div>
-
-        <div class="skill-card" id="skill-cicd">
-          <div class="skill-icon-wrapper">
-            <i class="fas fa-infinity"></i>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
           </div>
-          <h4 class="skill-name">CI/CD</h4>
-          <p class="skill-detail">Jenkins, GitHub Actions, CodePipeline</p>
-        </div>
-
-        <div class="skill-card" id="skill-python">
-          <div class="skill-icon-wrapper">
-            <i class="fab fa-python"></i>
-          </div>
-          <h4 class="skill-name">Python</h4>
-          <p class="skill-detail">Automation, Scripting, Boto3</p>
-        </div>
-
-        <div class="skill-card" id="skill-prometheus">
-          <div class="skill-icon-wrapper">
-            <i class="fas fa-fire-alt"></i>
-          </div>
-          <h4 class="skill-name">Prometheus</h4>
-          <p class="skill-detail">Metrics, Exporters, PromQL</p>
-        </div>
-
-        <div class="skill-card" id="skill-grafana">
-          <div class="skill-icon-wrapper">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h4 class="skill-name">Grafana</h4>
-          <p class="skill-detail">Dashboards, DORA Metrics, Alerts</p>
         </div>
 
       </div>
